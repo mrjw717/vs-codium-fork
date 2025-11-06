@@ -9,6 +9,7 @@ if [[ "${SHOULD_BUILD}" == "yes" ]]; then
   echo "MS_COMMIT=\"${MS_COMMIT}\""
 
   . prepare_vscode.sh
+  . integrate_kilocode.sh  # Integrate Kilo Code as built-in extension
 
   cd vscode || { echo "'vscode' dir not found"; exit 1; }
 
